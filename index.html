@@ -1,0 +1,20 @@
+<p>
+	Hi ${firstname}
+
+	<br>
+
+	your email is ${email}
+</p>
+
+
+<script src="jquery.js"></script>
+<script>
+
+
+	var preview = $('p').html()
+		.replace(/\${firstname}/, "Arjun")
+		.replace(/\${email}/, 'arjun.yonzan@gmail.com');
+
+	$('p').html(preview);
+
+</script>
